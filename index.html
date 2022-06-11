@@ -1,199 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDDM 121 - Tailwindcss</title>
-    <link rel="stylesheet" href="css/tailwind.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-  </head>
 
-  <body class="text-center">
-    <section id="top" class="bg-gradient-to-b from-black to-blue-900">
-      <!-- HEADER SECTION  -->
-      <header class="w-3/4 m-auto flex items-center justify-center h-2/2">
-        <div class="flex md:flex-col xl:flex-row xl:justify-between">
-          <figure class="flex items-center justify-center">
-            <img
-              src="img/Hero.png"
-              alt=""
-              class="pt-6 md:max-h-[600px] xl:max-h-[1600px] w-auto xl:ml-[-40px] md:ml-1 md:mr-12"
-            />
-          </figure>
-          <div id="header-text" class="py-9">
-            <h1
-              class="xl:my-5 xl:mr-4 xl:pr-20 md:px-20 font-black xl:text-5xl md:text-4xl text-white xl:text-left"
-            >
-              Bump is the easy way to
-              <span
-                id="highlight"
-                class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500"
-                >release</span
-              >
-              &
-              <span
-                class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500"
-                >update</span
-              >
-              indie Mac apps.
-            </h1>
-            <p class="xl:py-5 xl:pr-5 md:px-10 md:py-5 md:mx-10 font-semibold xl:text-1.6xl md:text-2xl text-white xl:text-left">
-              An automated pipeline designed to make distributing <br>
-              apps with
-              <span class="text-blue-500 hover:text-blue-400">Sparkle</span>
-              easier to maintain and collaborate on.
-            </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDDM 121 - Tailwindcss</title>
+  <link rel="stylesheet" href="css/tailwind.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
 
-            <div
-              id="cta"
-              class="md:text-center md:my-5 md:mx-auto xl:text-left xl:my-5 xl:mr-2 flex items-center xl:justify-left md:justify-center py-3 flex-col sm:flex-row"
-            >
-              <a
-                class=" md:px-4 md:py-3.5  xl:text-1xl font-semibold text-white xl:py-3.5 xl:px-3 rounded-lg flex items-center space-x-2 transition-all hover:translate-y-[-2px] bg-gradient-to-b from-blue-500 to-blue-700"
-              >
-                <img
-                  src="img/github.svg"
-                  alt=""
-                  class="max-h-[32px] w-auto px-2 opacity-50"
-                />
-
-                View the repo</a
-              >
-              <div id="create-repo">
-                <a
-                  class="text-1xl font-semibold text-blue-400 py-4 px-2.5 mx-5 border rounded-lg border-blue-400"
-                  href=""
-                >
-                  Create your repo now
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <!-- main section -->
-      <main class="w-3/4 m-auto flex flex-col items-center justify-center h-2/2">
-        <div id="card-container" class="grid xl:gap-4 xl:grid-cols-2 xl:grid-rows-2 md:gap-4 md:
-        grid-cols-1 md:grid-rows-4">
-          
-          <!-- seamless workflow card  -->
-          <div
-            class="card flex xl:flex-col md:flex-row md:justify-start xl:justify-center md:items-baseline xl:items-center bg-blue-900/30 rounded-lg"
-          >
-            <div class="card-header xl:py-1.5">
-              <img
-                src="img/seamless.png"
-                alt=""
-                id="icon"
-                class="pt-2 md: max-h-[100px] w-auto"
-              />
-            </div>
-            <div class="card-body py-1 px-10">
-              <h2 class="card-title text-white py-2 font-semibold md:text-left">
-                Seamless workflow
-              </h2>
-              <p
-                class="description text-white opacity-50 py-2 xl:text-center md:text-left text-sm"
-              >
-                Create a changelog, upload your new App archive and push it live
-                without leaving the GitHub UI. It's perfect for teams building
-                and releasing together.
-              </p>
-            </div>
-          </div>
-
-          <!-- built for sparkle card-->
-          <div
-            class="card flex flex-col justify-center items-center bg-blue-900/30 rounded-lg"
-          >
-            <div class="card-header py-1.5">
-              <img
-                src="img/automatic.png"
-                alt=""
-                id="icon"
-                class="pt-2 max-h-[100px] w-auto"
-              />
-            </div>
-            <div class="card-body py-1 px-10">
-              <h2 class="card-title text-white py-2 font-semibold">
-                Automatic certificate management
-              </h2>
-              <p
-                class="description text-white opacity-50 py-2 text-center text-sm"
-              >
-                Supply Bump with a Sparkle private key and it will take care of
-                creating signatures for updates. Your private key never leaves
-                GitHub’s encrypted secrets store.
-              </p>
-            </div>
-          </div>
-
-          <!-- Automatic certi mngmt card-->
-          <div
-            class="card flex flex-col justify-center items-center bg-blue-900/30 rounded-lg"
-          >
-            <div class="card-header py-1.5">
-              <img
-                src="img/sparkle.png"
-                alt=""
-                id="icon"
-                class="pt-2 max-h-[100px] w-auto"
-              />
-            </div>
-            <div class="card-body py-1 px-10">
-              <h2 class="card-title text-white py-2 font-semibold">
-                Built for Sparkle
-              </h2>
-              <p
-                class="description text-white opacity-50 py-2 text-center text-sm"
-              >
-                Sparkle has become the standard release mechanism for indie Mac
-                developers. Bump has been built from the ground up to be the
-                perfect companion toolchain.
-              </p>
-            </div>
-          </div>
-
-          
-          <!-- DevOps Included card-->
-          <div
-            class="card flex flex-col justify-center items-center bg-blue-900/30 rounded-lg"
-          >
-            <div class="card-header py-1.5">
-              <img
-                src="img/devops.png"
-                alt=""
-                id="icon"
-                class="pt-2 max-h-[100px] w-auto"
-              />
-            </div>
-            <div class="card-body py-1 px-10">
-              <h2 class="card-title text-white py-2 font-semibold">
-                DevOps included
-              </h2>
-              <p
-                class="description text-white opacity-50 py-2 text-center text-sm"
-              >
-              Bump uses Terraform under the hood to take care of provisioning infrastructure. All you need to bring is your own AWS account.
-              </p>
-            </div>
-          </div>
-
-
-        </div>
-        <div class="py-1 my-16 font-semibold flex flex-row justify-center items-center border rounded-lg border-blue-300">
-
-          <img src="img/medium.png" alt="">
-          <p class="text-blue-400 px-2">
-
-            Read the Medium post about why we built Bump
+<body class="text-center">
+  <section id="top" class="bg-gradient-to-b from-black to-blue-900">
+    <!-- HEADER SECTION  -->
+    <header class="w-3/4 m-auto flex items-center justify-center h-2/2">
+      <div class="flex md:flex-col xl:flex-row xl:justify-between">
+        <figure class="flex items-center justify-center">
+          <img src="img/Hero.png" alt=""
+            class="pt-6 md:max-h-[600px] xl:max-h-[1600px] w-auto xl:ml-[-40px] md:ml-1 md:mr-12" />
+        </figure>
+        <div id="header-text" class="py-9">
+          <h1 class="xl:my-5 xl:mr-4 xl:pr-20 md:px-20 font-black xl:text-5xl md:text-4xl text-white xl:text-left">
+            Bump is the easy way to
+            <span id="highlight"
+              class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">release</span>
+            &
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">update</span>
+            indie Mac apps.
+          </h1>
+          <p
+            class="xl:py-5 xl:pr-5 md:px-10 md:py-5 md:mx-10 font-semibold xl:text-1.6xl md:text-2xl text-white xl:text-left">
+            An automated pipeline designed to make distributing <br />
+            apps with
+            <span class="text-blue-500 hover:text-blue-400">Sparkle</span>
+            easier to maintain and collaborate on.
           </p>
+
+          <div id="cta"
+            class="md:text-center md:my-5 md:mx-auto xl:text-left xl:my-5 xl:mr-2 flex items-center xl:justify-left md:justify-center py-3 flex-col sm:flex-row">
+            <a
+              class="md:px-4 md:py-3.5 xl:text-1xl font-semibold text-white xl:py-3.5 xl:px-3 rounded-lg flex items-center space-x-2 transition-all hover:translate-y-[-2px] bg-gradient-to-b from-blue-500 to-blue-700">
+              <img src="img/github.svg" alt="" class="max-h-[32px] w-auto px-2 opacity-50" />
+
+              View the repo</a>
+            <div id="create-repo">
+              <a class="text-1xl font-semibold text-blue-400 py-4 px-2.5 mx-5 border rounded-lg border-blue-400"
+                href="">
+                Create your repo now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main class="w-3/4 m-auto flex flex-col items-center justify-center h-2/2">
+      <div id="card-container"
+        class="grid xl:gap-4 xl:grid-cols-2 xl:grid-rows-2 md:gap-4 md: grid-cols-1 md:grid-rows-4">
+        <!-- seamless workflow card  -->
+        <div
+          class="card 
+          md:flex md:flex-row md:items-center md:justify-center 
+          xl:flex xl:flex-col 
+           xl:justify-center 
+           xl:items-center
+          bg-blue-900/30 rounded-lg">
+
+          <div class="card-header md: xl:py-1.5">
+            <img src="img/seamless.png" alt="" id="icon" class="xl:pt-2 md:max-h-[150px] pb-5 xl:max-h-[100px] xl:w-auto mt-5" />
+          </div>
+          <div class="card-body xl:py-1 px-10">
+            <h2 class="card-title text-white py-2 font-semibold md:text-left">
+              Seamless workflow
+            </h2>
+            <p class="description text-white opacity-50 py-2 xl:text-center md:text-left text-sm">
+              Create a changelog, upload your new App archive and push it live
+              without leaving the GitHub UI. It's perfect for teams building
+              and releasing together.
+            </p>
+          </div>
         </div>
 
-      </main>
-    </section>
-  </body>
+        <!-- built for sparkle card-->
+        <div class="card md:flex md:flex-row md:items-center md:justify-center 
+        xl:flex xl:flex-col 
+         xl:justify-center 
+         xl:items-center
+        bg-blue-900/30 rounded-lg">
+          <div class="card-header py-1.5">
+            <img src="img/automatic.png" alt="" id="icon" class="xl:pt-2 md:max-h-[150px] pb-5 xl:max-h-[100px] xl:w-auto mt-5" />
+          </div>
+          <div class="card-body py-1 px-10">
+            <h2 class="card-title text-white py-2 font-semibold md:text-left">
+              Automatic certificate management
+            </h2>
+            <p class="description text-white opacity-50 py-2 xl:text-center text-sm md:text-left">
+              Supply Bump with a Sparkle private key and it will take care of
+              creating signatures for updates. Your private key never leaves
+              GitHub’s encrypted secrets store.
+            </p>
+          </div>
+        </div>
+
+        <!-- Automatic certi mngmt card-->
+        <div class="card md:flex md:flex-row md:items-center md:justify-center 
+        xl:flex xl:flex-col 
+         xl:justify-center 
+         xl:items-center
+        bg-blue-900/30 rounded-lg">
+          <div class="card-header py-1.5">
+            <img src="img/sparkle.png" alt="" id="icon" class="xl:pt-2 md:max-h-[150px] pb-5 xl:max-h-[100px] xl:w-auto mt-5" />
+          </div>
+          <div class="card-body py-1 px-10">
+            <h2 class="card-title text-white py-2 font-semibold md:text-left">
+              Built for Sparkle
+            </h2>
+            <p class="description text-white opacity-50 py-2 xl:text-center text-sm md:text-left">
+              Sparkle has become the standard release mechanism for indie Mac
+              developers. Bump has been built from the ground up to be the
+              perfect companion toolchain.
+            </p>
+          </div>
+        </div>
+
+        <!-- DevOps Included card-->
+        <div class="card md:flex md:flex-row md:items-center md:justify-center 
+        xl:flex xl:flex-col 
+         xl:justify-center 
+         xl:items-center
+        bg-blue-900/30 rounded-lg">
+          <div class="card-header py-1.5">
+            <img src="img/devops.png" alt="" id="icon" class="xl:pt-2 md:max-h-[130px] pb-5 xl:max-h-[100px] xl:w-auto mt-5" />
+          </div>
+          <div class="card-body py-1 px-10">
+            <h2 class="card-title text-white py-2 font-semibold md:text-left">
+              DevOps included
+            </h2>
+            <p class="description text-white opacity-50 py-2 xl:text-center text-sm md:text-left">
+              Bump uses Terraform under the hood to take care of provisioning
+              infrastructure. All you need to bring is your own AWS account.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="py-1 my-16 font-semibold flex flex-row justify-center items-center border rounded-lg border-blue-300">
+        <img src="img/medium.png" alt="" />
+        <p class="text-blue-400 px-2">
+          Read the Medium post about why we built Bump
+        </p>
+      </div>
+    </main>
+  </section>
+</body>
+
 </html>
