@@ -3,3 +3,6 @@
   
   /* opacity:; */
 }
+.card-header{
+  flex-shrink: 0;
+}
